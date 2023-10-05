@@ -1,10 +1,22 @@
 body {
     background-image: url('bg.png');
+    animation: transitionIn 0.75s;
     background-size: cover;
     font-family: Arial;
     margin: 0;
     padding: 0;
   }
+  @keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
   
   .sidenav {
     height: 100%;
@@ -39,6 +51,10 @@ body {
     font-size: 36px;
     margin-left: 50px;
   }
+
+  img{
+    border-radius: 20px;
+  }
   
   #main {
     transition: margin-left .5s;
@@ -58,6 +74,7 @@ body {
   
   p {
     color: #333;
+    font-family: Arial;
     text-align: center;
   }
   
@@ -123,3 +140,85 @@ body {
     border-collapse: collapse;
     border-style: hidden;
   }
+  
+  article {
+    margin: auto;
+  }
+
+  .cardContent {
+    padding: 20px;
+  }
+  .card:hover {
+    transform: scale(1.2);
+    box-sizing: border-box;
+    transform-origin: center;
+    transition: transform 0.5s;
+    }
+    
+    .card .cardDescription {
+    position: absolute;
+    bottom: 40px;
+    left: 10px;
+    right: 0;
+    padding: 10px;
+    border-radius: 0 0 20px 20px;
+    opacity: 0;
+    }
+    
+    
+    .card:hover .cardDescription {
+    display: block;
+    opacity: 1;
+    transition: opacity 0.5s;
+    }
+    
+    .card:hover .cardTitle {
+    position: relative;
+    transform: translateY(-1.8rem);
+    transition: transform 0.5s;
+    }
+  
+    .card {
+    width: 300px;
+    height:330px;
+    background-color: white;
+    border-radius: 20px;
+    transition: transform 0.5s;
+    overflow: hidden;
+    position: relative;
+    }
+    
+    .articleImage {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    object-fit: cover;
+    width: 300px;
+    height: 200px;
+    border-radius: 20px 20px 0 0;
+    backface-visibility: hidden;
+    }
+  
+    .card:hover .articleImage {
+    transform: scale(0.9);
+    transition: transform 0.5s;
+    }
+
+    .articleTime{
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+    }
+
+    .articleTime{
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+    }
+
+    .articleReadMore{
+      position: absolute;
+      bottom: 40px;
+      left: 20px;
+    }
+    

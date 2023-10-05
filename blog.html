@@ -14,12 +14,54 @@
       <a href="faq.html">FAQ</a>
     </div>
     <script src="assets/js/sidebar.js"></script>
-    <span style="font-size:30px;cursor:pointer;color:white" onclick="openNav()"> &#9776;sidebar</span>
-    <div id="main">
+    <span style="font-size:30px;cursor:pointer;color:white" onclick="openNav()"> &#9776;></span>
+    <div id="main" style="padding: 100px;">
       <br><br><br>
-      <div class="container">
-        <h1>Blog</h1>
-        <p style="font-weight: bold">No posts found.</p>
+      <div class="container" style="display: grid;grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));gap: 2rem;width: 100%;">
+        <div class="card">
+          <article>
+            <img src="assets/img/blogposts/20231005_0.jpg" alt="blog post image" class="articleImage">
+            <section class="cardContent">
+              <h3 class="cardTitle">Unusual sightings nearby</h3>
+
+              <p class="cardDescription">When walking home yesterday I...</p>
+
+              <time datetime="2023-10-05" class="articleTime">Oct 5, 2023</time>
+
+              <a href="20231005.html" class="articleReadMore">Read more...</a>
+            </section>
+          </article>
+        </div>
+
+        <div class="card">
+          <article>
+            <img src="https://picsum.photos/300/200?random=1" alt="blog post image" class="articleImage">
+            <section class="cardContent">
+              <h3 class="cardTitle">Sample post 1</h3>
+
+              <p class="cardDescription">Sample description 1</p>
+
+              <time datetime="2023-10-05" class="articleTime">Oct 5, 2023</time>
+
+              <a href="#" class="articleReadMore">Read more...</a>
+            </section>
+          </article>
+        </div>
+
+        <div class="card">
+          <article>
+            <img src="https://picsum.photos/300/200?random=2" alt="blog post image" class="articleImage">
+            <section class="cardContent">
+              <h3 class="cardTitle">Sample post 2</h3>
+
+              <p class="cardDescription">Sample description 2</p>
+
+              <time datetime="2023-10-05" class="articleTime">Oct 5, 2023</time>
+
+              <a href="#" class="articleReadMore">Read more...</a>
+            </section>
+          </article>
+        </div>
       </div>
     </div>  
   </body>
