@@ -6,6 +6,10 @@ body {
     margin: 0;
     padding: 0;
   }
+  .pageContent {
+    position: relative;
+    min-height: 100vh;
+  }
   @keyframes transitionIn {
     from {
         opacity: 0;
@@ -17,7 +21,6 @@ body {
         transform: translateY(0px);
     }
 }
-  
   .sidenav {
     height: 100%;
     width: 0;
@@ -222,3 +225,16 @@ body {
       left: 20px;
     }
     
+    .footer{
+      bottom: 0;
+      height: 40px;
+      left: 0;
+      position: static;
+      background-color: rgb(31, 26, 34);
+      text-align: center;
+    }
+    .footer a {
+      padding-top: 10px;
+      color: #ffffff;
+     }
+      
