@@ -1,6 +1,6 @@
 body {
     background-image: url('bg.png');
-    animation: transitionIn 0.75s;
+    animation: transitionBody 0.85s;
     background-size: cover;
     font-family: Arial;
     margin: 0;
@@ -9,11 +9,11 @@ body {
   .pageContent {
     position: relative;
     min-height: 100vh;
-  }
-  @keyframes transitionIn {
+  } 
+  @keyframes transitionBody {
     from {
         opacity: 0;
-        transform: translateY(-10px);
+        transform: translateY(-12px);
     }
 
     to {
